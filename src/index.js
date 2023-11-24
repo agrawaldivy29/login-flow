@@ -1,16 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
 
-function App() {
-  return (
-    <div className="container">
-      <h1>Hello</h1>
-      <form className="form">
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-        <button type="submit">Login</button>
-      </form>
-    </div>
-  );
-}
-
-export default App;
+ReactDOM.render(<App />, document.getElementById("root"));
